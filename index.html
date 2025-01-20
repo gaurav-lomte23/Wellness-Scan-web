@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WELLNESS SCAN - Your ultimate health and wellness companion app. Track your fitness, monitor vital signs, and achieve your wellness goals with our innovative scanning technology." />
+<meta name="keywords" content="wellness scan, health tracking, fitness app, vital signs monitor, wellness technology, health monitoring, medical scan, digital health, wellness goals, fitness tracking, health analytics" />
+<meta name="author" content="WELLNESS SCAN" />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="WELLNESS SCAN - Advanced Health Monitoring App" />
+<meta property="og:description" content="Transform your health journey with WELLNESS SCAN. Advanced monitoring, real-time tracking, and personalized wellness insights at your fingertips." />
+<meta property="og:image" content="images/screenshot1.png" />
+<meta property="og:url" content="https://gaurav-lomte23.github.io/Wellness-Scan-Website/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="WELLNESS SCAN - Advanced Health Monitoring App" />
+<meta name="twitter:description" content="Transform your health journey with WELLNESS SCAN. Advanced monitoring, real-time tracking, and personalized wellness insights at your fingertips." />
+<meta name="twitter:image" content="images/screenshot1.png" />
+<link rel="canonical" href="https://gaurav-lomte23.github.io/Wellness-Scan-Website/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<meta name="theme-color" content="#000000" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="application-name" content="WELLNESS SCAN" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-title" content="WELLNESS SCAN" />
+<meta name="format-detection" content="telephone=no" />
+<meta property="og:site_name" content="WELLNESS SCAN" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@wellnessscan" />
+<meta name="twitter:site" content="@wellnessscan" />
+<link rel="alternate" hreflang="en" href="https://gaurav-lomte23.github.io/Wellness-Scan-Website/" />
+<meta name="geo.region" content="US" />
+<meta name="geo.position" content="[Your-Coordinates]" />
+<meta name="ICBM" content="[Your-Coordinates]" />
+<meta name="rating" content="General" />
+<meta name="revisit-after" content="7 days" />
+<meta name="copyright" content="Copyright © 2024 WELLNESS SCAN. All rights reserved." />
+<!-- Rich Snippets & Structured Data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "WELLNESS SCAN",
+    "description": "Advanced health monitoring and wellness tracking application with real-time scanning capabilities",
+    "operatingSystem": "Android, iOS",
+    "applicationCategory": "HealthApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1250"
+    }
+  }
+  </script>
+  
+  <!-- Additional Meta Tags -->
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+  <meta name="pinterest-rich-pin" content="true" />
+  <meta property="article:publisher" content="[Your-Facebook-Page-URL]" />
+  <meta property="fb:app_id" content="[Your-FB-App-ID]" />
+  <meta name="apple-itunes-app" content="app-id=[Your-App-Store-ID]" />
+  <meta name="google-play-app" content="app-id=[Your-Play-Store-ID]" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <meta name="google-site-verification" content="[Your-Google-Verification-Code]" />
+  <meta name="norton-safeweb-site-verification" content="[Your-Norton-Verification-Code]" />
+  
+
+    <title> WELLNESS  SCAN</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #1a1a1a;
+        position: sticky;
+        top: 0;
+      }
+
+      .app-name {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .app-name video {
+        width: 360px;
+        height: 60px;
+        border-radius: 10%;
+        object-fit: cover;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 20px;
+      }
+
+      video {
+        max-width: 80%;
+        border-radius: 10px;
+        display: block;
+      }
+
+      video[autoplay] {
+        pointer-events: none;
+      }
+
+      /* Screenshot Section */
+      .screenshot-section {
+        margin-top: 50px;
+        padding: 20px;
+        color: white;
+      }
+
+      .screenshot-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .screenshot-header h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .screenshot-header .explore-now {
+        font-size: 18px;
+        color: #ffcc00;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid #ffcc00;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .screenshot-header .explore-now:hover {
+        background-color: #ffcc00;
+        color: black;
+      }
+
+      .screenshots {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .screenshots img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s forwards;
+      }
+
+      .screenshots img:nth-child(2) {
+        animation-delay: 0.5s;
+      }
+
+      .screenshots img:nth-child(3) {
+        animation-delay: 1s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .design-lines {
+        margin-top: 50px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+        border-top: 2px solid #ffcc00;
+        border-bottom: 2px solid #ffcc00;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5),
+          inset 0 0 10px rgba(255, 204, 0, 0.5);
+      }
+      p {
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .line {
+        height: 5px;
+        background-color: #ffcc00;
+        margin: 20px 0;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+      }
+
+      .line-right {
+        width: 50%;
+        margin-left: auto;
+        border-radius: 5px 0 0 5px;
+      }
+
+      .line-left {
+        width: 50%;
+        margin-right: auto;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .line:hover {
+        background-color: #ff9900;
+        transform: scale(1.1);
+      }
+
+      .design-lines::before,
+      .design-lines::after {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #ffcc00;
+        border-radius: 50%;
+        opacity: 0.2;
+        animation: pulse 2s infinite;
+      }
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      .modal-content h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .modal-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      /* Review Section Styles */
+      .review-section {
+        text-align: center;
+        padding: 20px;
+        background-color: #000000;
+      }
+
+      .review-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #ffcc00;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .reviews-scroll-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px 0;
+        scrollbar-width: thin;
+        scrollbar-color: #cccccc #f8f9fa;
+      }
+
+      .reviews-scroll-container::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      .reviews-scroll-container::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 4px;
+      }
+
+      .reviews-scroll-container::-webkit-scrollbar-track {
+        background-color: #2b4e70;
+      }
+
+      .review-card {
+        flex: 0 0 auto;
+        width: 250px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s ease;
+      }
+
+      .review-card:hover {
+        transform: scale(1.05);
+      }
+
+      .review-text {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .reviewer-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .reviewer-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .reviewer-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        color: #333;
+      }
+
+      .reviewer-role {
+        font-size: 14px;
+        color: #777;
+        margin: 0;
+      }
+
+      .contact-item {
+        font-size: 18px;
+      }
+
+      .contact-item a {
+        color: #ffcc00;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 3s;
+      }
+
+      .contact-item a:hover {
+        color: #ff9900;
+      }
+
+      .close {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      .close:hover {
+        color: #ffcc00;
+      }
+
+      .design-lines::before {
+        top: 10%;
+        left: 10%;
+      }
+
+      .design-lines::after {
+        bottom: 10%;
+        right: 10%;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.2;
+        }
+        50% {
+          transform: scale(1.5);
+          opacity: 0.4;
+        }
+      }
+      .three-videos-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Space between the videos */
+        margin: 50px 0;
+        padding: 20px;
+      }
+
+      .three-videos-container video {
+        height: 350px; /* Adjust height if needed */
+        width: 350px; /* Increase the width */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow */
+        object-fit: cover; /* Ensures proper cropping for different aspect ratios */
+      }
+
+      .line {
+        height: 5px;
+        background-color: #ffcc00;
+        margin: 10px 0;
+      }
+
+      .line-right {
+        width: 50%;
+        margin-left: auto;
+      }
+
+      .line-left {
+        width: 50%;
+        margin-right: auto;
+      }
+      #popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .popup-content {
+        background-color: #fff;
+        color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .popup-content h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .popup-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .close-btn {
+        padding: 10px 20px;
+        background-color: #ffcc00;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .close-btn:hover {
+        background-color: #e6b800;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="app-name">
+        WELLNESS  SCAN  by:
+        <video autoplay muted loop>
+          <source src="images/ani4.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <nav>
+        <a href="#" id="downloadBtn">Download</a>
+
+        <!-- Popup -->
+        <div id="popup" class="popup-overlay">
+          <div class="popup-content">
+            <h2>App Coming Soon!</h2>
+            <p>Thank you for your patience!</p>
+            <button id="closePopup" class="close-btn">Close</button>
+          </div>
+        </div>
+        <script>
+          // Get the elements
+          const downloadBtn = document.getElementById("downloadBtn");
+          const popup = document.getElementById("popup");
+          const closePopup = document.getElementById("closePopup");
+
+          // When the Download button is clicked, show the popup
+          downloadBtn.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            popup.style.display = "flex"; // Show the popup
+          });
+
+          // When the close button is clicked, hide the popup
+          closePopup.addEventListener("click", function () {
+            popup.style.display = "none"; // Hide the popup
+          });
+        </script>
+        <a href="#contact" onclick="openContactModal()">Contact</a>
+
+        <!-- Contact Modal -->
+        <div id="contactModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us via phone or email!</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <strong>Phone:</strong>
+                <a href="tel:+919767033308">9767033308</a>
+              </div>
+              <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:gauravlomte23@gmail.com"
+                  >gauravlomte23@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          // Open the modal
+          function openContactModal() {
+            document.getElementById("contactModal").style.display = "flex";
+          }
+
+          // Close the modal
+          function closeContactModal() {
+            document.getElementById("contactModal").style.display = "none";
+          }
+
+          // Close the modal when clicking outside the modal content
+          window.onclick = function (event) {
+            const modal = document.getElementById("contactModal");
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          };
+        </script>
+      </nav>
+    </header>
+
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="images/ani2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Screenshot Section -->
+    <div class="screenshot-section">
+      <div class="screenshot-header">
+        <h2>Screenshots of the App</h2>
+        <a href="#explore" class="explore-now">Explore Now</a>
+      </div>
+      <div class="screenshots">
+        <img src="images/screenshot1.png" alt="Screenshot 1" />
+        <img src="images/screenshot2.png" alt="Screenshot 2" />
+        <img src="images/screenshot3.png" alt="Screenshot 3" />
+        <img src="images/screenshot4.png" alt="Screenshot 3" />
+        <img src="images/screenshot5.png" alt="Screenshot 3" />
+      </div>
+    </div>
+
+    <!-- Design Lines Section -->
+    <div class="design-lines">
+      <div class="line line-right"></div>
+      <p style="font-size: 36px; font-weight: bold">APP PROMO !</p>
+
+      <div class="three-videos-container">
+        <video autoplay muted loop>
+          <source src="images/ani5.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay muted loop>
+          <source src="images/ani6.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay muted loop>
+          <source src="images/ani7.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="line line-left"></div>
+    </div>
+    <section class="review-section">
+      <h2 class="review-title">What Our Users Say</h2>
+      <div class="reviews-scroll-container">
+        <div class="review-card">
+          <p class="review-text">
+            "A game-changer! The features are exactly what I needed, and the
+            user experience is flawless. Kudos to the team!"
+          </p>
+          <div class="reviewer-info">
+            <img src="images/user8.png" alt="User 1" class="reviewer-img" />
+            <div>
+              <h4 class="reviewer-name">Jane Smith</h4>
+              <p class="reviewer-role">Freelance Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p class="review-text">
+            "The best app I've ever used! It helps me stay organized and
+            productive. I love the sleek design and the powerful tools."
+          </p>
+          <div class="reviewer-info">
+            <img src="images/user9.png" alt="User 2" class="reviewer-img" />
+            <div>
+              <h4 class="reviewer-name">Michael Johnson</h4>
+              <p class="reviewer-role">Software Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p class="review-text">
+            "This app is a must-have for anyone looking to boost productivity.
+            The interface is user-friendly, and it runs flawlessly."
+          </p>
+          <div class="reviewer-info">
+            <img src="images/user10.png" alt="User 3" class="reviewer-img" />
+            <div>
+              <h4 class="reviewer-name">Emily Davis</h4>
+              <p class="reviewer-role">Content Creator</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p class="review-text">
+            "I’ve tried many apps, but this one stands out. The attention to
+            detail and functionality is impressive. Great work!"
+          </p>
+          <div class="reviewer-info">
+            <img src="images/user8.png" alt="User 4" class="reviewer-img" />
+            <div>
+              <h4 class="reviewer-name">Chris Lee</h4>
+              <p class="reviewer-role">Graphic Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p class="review-text">
+            "Absolutely fantastic! It has saved me so much time, and the
+            customer support is amazing. Highly recommended."
+          </p>
+          <div class="reviewer-info">
+            <img src="images/user9.png" alt="User 5" class="reviewer-img" />
+            <div>
+              <h4 class="reviewer-name">Sophia Martinez</h4>
+              <p class="reviewer-role">Entrepreneur</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p class="review-text">
+            "This app is perfect for managing tasks efficiently. The design is
+            clean, and it’s packed with powerful features."
+          </p>
+          <div class="reviewer-info">
+            <img src="images/user10.png" alt="User 6" class="reviewer-img" />
+            <div>
+              <h4 class="reviewer-name">Liam Wilson</h4>
+              <p class="reviewer-role">Project Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="images/ani8.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </body>
+</html>
