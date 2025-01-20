@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://gaurav-lomte23.github.io/Wellness-Scan-web/sitemap.xml
